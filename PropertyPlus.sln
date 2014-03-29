@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyPlus.Domain", "PropertyPlus\PropertyPlus.Domain.csproj", "{30123E2A-46DE-406B-86C0-372B3DFF9B6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyPlusUnitTests", "PropertyPlusTests\PropertyPlusUnitTests.csproj", "{4EC23A11-2B80-46D0-94CC-6C2E3B429C66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Testing", "..\Common\Testing\Common.Testing.csproj", "{313A11F6-213F-4D07-9C5E-769373FDA062}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30123E2A-46DE-406B-86C0-372B3DFF9B6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30123E2A-46DE-406B-86C0-372B3DFF9B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30123E2A-46DE-406B-86C0-372B3DFF9B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30123E2A-46DE-406B-86C0-372B3DFF9B6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EC23A11-2B80-46D0-94CC-6C2E3B429C66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EC23A11-2B80-46D0-94CC-6C2E3B429C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EC23A11-2B80-46D0-94CC-6C2E3B429C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EC23A11-2B80-46D0-94CC-6C2E3B429C66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{313A11F6-213F-4D07-9C5E-769373FDA062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{313A11F6-213F-4D07-9C5E-769373FDA062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{313A11F6-213F-4D07-9C5E-769373FDA062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{313A11F6-213F-4D07-9C5E-769373FDA062}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

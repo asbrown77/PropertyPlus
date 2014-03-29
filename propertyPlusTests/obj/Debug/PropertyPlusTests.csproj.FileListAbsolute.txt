@@ -1,0 +1,9 @@
+C:\Development\PropertyPlus\PropertyPlusTests\bin\Debug\PropertyPlusTests.dll
+C:\Development\PropertyPlus\PropertyPlusTests\bin\Debug\PropertyPlusTests.pdb
+C:\Development\PropertyPlus\PropertyPlusTests\bin\Debug\nunit.framework.dll
+C:\Development\PropertyPlus\PropertyPlusTests\bin\Debug\nunit.framework.xml
+C:\Development\PropertyPlus\PropertyPlusTests\obj\Debug\PropertyPlusTests.csprojResolveAssemblyReference.cache
+C:\Development\PropertyPlus\PropertyPlusTests\obj\Debug\PropertyPlusTests.dll
+C:\Development\PropertyPlus\PropertyPlusTests\obj\Debug\PropertyPlusTests.pdb
+c:\development\PropertyPlus\PropertyPlusTests\bin\Debug\PropertyPlus.Domain.dll
+c:\development\PropertyPlus\PropertyPlusTests\bin\Debug\PropertyPlus.Domain.pdb

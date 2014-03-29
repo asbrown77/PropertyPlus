@@ -1,0 +1,5 @@
+C:\Development\PropertyPlus\PropertyPlus\bin\Debug\PropertyPlus.Domain.dll
+C:\Development\PropertyPlus\PropertyPlus\bin\Debug\PropertyPlus.Domain.pdb
+C:\Development\PropertyPlus\PropertyPlus\obj\Debug\PropertyPlus.Domain.csprojResolveAssemblyReference.cache
+C:\Development\PropertyPlus\PropertyPlus\obj\Debug\PropertyPlus.Domain.dll
+C:\Development\PropertyPlus\PropertyPlus\obj\Debug\PropertyPlus.Domain.pdb
