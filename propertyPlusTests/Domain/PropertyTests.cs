@@ -3,16 +3,29 @@ using Common.Testing;
 using NUnit.Framework;
 using PropertyPlus.Domain;
 using PropertyPlus.Interface;
+using Rhino.Mocks;
 
-namespace PropertyPlusTests
+
+namespace PropertyPlusUnitTests.Domain
 {
-    public class when_constructing_with_no_address_details : ContextTest
+    public abstract class with_property : ContextTest
+    {
+        protected Property property;
+        protected readonly IAddress stubAddress = MockRepository.GenerateStub<IAddress>();
+
+        protected Property CreateProperty(IAddress address, decimal purchaseAmount, DateTime purchaseDate)
+        {
+            return new Property(address, purchaseAmount, purchaseDate);
+        }
+    }
+
+    public class when_constructing_with_no_address_details : with_property
     {
         private Exception exception;
 
         protected override void Act()
         {
-            exception = Trying(() => {new Property(null);});
+            exception = Trying(() => CreateProperty(null, 0, DateTime.MinValue));
         }
 
         [Test]
@@ -28,10 +41,11 @@ namespace PropertyPlusTests
         }
     }
 
-    public class when_constructing_with_valid_address : ContextTest
+    public class when_constructing_with_address_and_purchase_amount : with_property
     {
-        private Property property;
         private IAddress validAddress;
+        private readonly decimal purchaseAmount = new decimal(1001.12);
+        private readonly DateTime purchaseDate = DateTime.Parse("01 Jan 2014");
 
         protected override void Arrange()
         {
@@ -40,7 +54,7 @@ namespace PropertyPlusTests
 
         protected override void Act()
         {
-            property = new Property(validAddress);
+            property = CreateProperty(validAddress, purchaseAmount, purchaseDate);
         }
 
         [Test]
@@ -50,22 +64,32 @@ namespace PropertyPlusTests
         }
 
         [Test]
+        public void should_have_purchase_details()
+        {
+            property.PurchaseAmount.ShouldEqual(purchaseAmount);  
+        }        
+        
+        [Test]
+        public void should_have_purchase_date()
+        {
+            property.PurchaseDate.ShouldEqual(purchaseDate);  
+        }
+
+        [Test]
         public void should_have_no_associated_mortgages()
         {
             property.AssociatedMortgages.ShouldBeEmpty();
         }
     }
 
-    public class when_add_associated_mortgage : ContextTest
+
+    public class when_add_associated_mortgage : with_property
     {
-        private Property property;
-        private IAddress address;
         private IMortgage mortgage;
 
         protected override void Arrange()
         {
-            address = Address.Create(7, "North Meadow View", "TownX", "XXX XXX");
-            property = new Property(address);
+            property = CreateProperty(stubAddress, 0, DateTime.MinValue);
             mortgage = new Mortgage();
         }
 

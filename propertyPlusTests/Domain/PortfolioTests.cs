@@ -2,9 +2,8 @@
 using System.Linq;
 using NUnit.Framework;
 using PropertyPlus.Domain;
-using PropertyPlus.Interface;
 
-namespace PropertyPlusTests
+namespace PropertyPlusUnitTests.Domain
 {
     [TestFixture]
     public class PortfolioTests
@@ -16,8 +15,9 @@ namespace PropertyPlusTests
 
         private static Property make_Property(string street = "XXXStreet")
         {
+            var dateTime = DateTime.MinValue;
             var address = Address.Create(1, street, "xxTown", "xxx xxx");
-            return new Property(address);
+            return new Property(address, (decimal) 1234.56, dateTime );
         }
 
         [Test]

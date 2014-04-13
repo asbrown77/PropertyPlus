@@ -1,1 +1,5 @@
-obj
+#ignore everything under the 'bin' folder
+bin/
+#ignore user files
+*.user
+*ncrunch*

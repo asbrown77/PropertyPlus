@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyPlus.Domain", "PropertyPlus\PropertyPlus.Domain.csproj", "{30123E2A-46DE-406B-86C0-372B3DFF9B6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyPlusUnitTests", "PropertyPlusTests\PropertyPlusUnitTests.csproj", "{4EC23A11-2B80-46D0-94CC-6C2E3B429C66}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyPlus.UnitTests", "PropertyPlusTests\PropertyPlus.UnitTests.csproj", "{4EC23A11-2B80-46D0-94CC-6C2E3B429C66}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Testing", "..\Common\Testing\Common.Testing.csproj", "{313A11F6-213F-4D07-9C5E-769373FDA062}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Service", "..\Common\Common.Service\Common.Service.csproj", "{FFD2E652-CB52-41ED-A7C5-1D7A291AE34A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyPlus.Controllers", "PropertyPlus.Controllers\PropertyPlus.Controllers.csproj", "{498D0C51-87AD-447D-95AD-163CD5329F88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyPlus.Repository", "PropertyPlus.Repository\PropertyPlus.Repository.csproj", "{93254671-DAAE-4004-BB32-46370666A452}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +31,18 @@ Global
 		{313A11F6-213F-4D07-9C5E-769373FDA062}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{313A11F6-213F-4D07-9C5E-769373FDA062}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{313A11F6-213F-4D07-9C5E-769373FDA062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFD2E652-CB52-41ED-A7C5-1D7A291AE34A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD2E652-CB52-41ED-A7C5-1D7A291AE34A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD2E652-CB52-41ED-A7C5-1D7A291AE34A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD2E652-CB52-41ED-A7C5-1D7A291AE34A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{498D0C51-87AD-447D-95AD-163CD5329F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{498D0C51-87AD-447D-95AD-163CD5329F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{498D0C51-87AD-447D-95AD-163CD5329F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{498D0C51-87AD-447D-95AD-163CD5329F88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93254671-DAAE-4004-BB32-46370666A452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93254671-DAAE-4004-BB32-46370666A452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93254671-DAAE-4004-BB32-46370666A452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93254671-DAAE-4004-BB32-46370666A452}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

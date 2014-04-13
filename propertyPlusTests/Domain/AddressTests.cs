@@ -3,9 +3,8 @@ using NUnit.Framework;
 using PropertyPlus.Domain;
 using PropertyPlus.Interface;
 
-namespace PropertyPlusUnitTests.Domain
+namespace PropertyPlus.UnitTests.Domain
 {
-    // DO use context specification style OR unit of work test style
     public class when_constructoring_with_minimum_required_details : ContextTest
     {
         const int ExpectedHouseNumber = 1;
@@ -43,25 +42,5 @@ namespace PropertyPlusUnitTests.Domain
         {
             Assert.AreEqual(ExpectedPostCode, address.PostCode);
         }
-    }
-
-    [TestFixture]
-    public class AddressTests
-    {
-        [Test]
-        public void Construct_SuppliedMinimumRequiredDetails_ReturnAddressWithMinimumDetailsSet()
-        {
-            const int expectedHouseNumber = 7;
-            const string expectedStreet = "North Meadow View";
-            const string expectedTown = "Duston";
-            const string expectedPostCode = "NN5 4UD";
-            var address = Address.Create(expectedHouseNumber, expectedStreet, expectedTown, expectedPostCode);
-
-            Assert.IsNotNull(address);
-            Assert.AreEqual(expectedHouseNumber, address.Number);
-            Assert.AreEqual(expectedStreet, address.Street);
-            Assert.AreEqual(expectedTown, address.Town);
-            Assert.AreEqual(expectedPostCode, address.PostCode);
-        }      
     }
 }
