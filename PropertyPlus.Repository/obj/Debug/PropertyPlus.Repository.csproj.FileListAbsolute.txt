@@ -1,7 +1,0 @@
-C:\Development\PropertyPlus\PropertyPlus.Repository\bin\Debug\PropertyPlus.Repository.dll
-C:\Development\PropertyPlus\PropertyPlus.Repository\bin\Debug\PropertyPlus.Repository.pdb
-C:\Development\PropertyPlus\PropertyPlus.Repository\bin\Debug\PropertyPlus.Domain.dll
-C:\Development\PropertyPlus\PropertyPlus.Repository\bin\Debug\PropertyPlus.Domain.pdb
-C:\Development\PropertyPlus\PropertyPlus.Repository\obj\Debug\PropertyPlus.Repository.csprojResolveAssemblyReference.cache
-C:\Development\PropertyPlus\PropertyPlus.Repository\obj\Debug\PropertyPlus.Repository.dll
-C:\Development\PropertyPlus\PropertyPlus.Repository\obj\Debug\PropertyPlus.Repository.pdb
