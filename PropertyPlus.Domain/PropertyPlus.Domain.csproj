@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{93254671-DAAE-4004-BB32-46370666A452}</ProjectGuid>
+    <ProjectGuid>{30123E2A-46DE-406B-86C0-372B3DFF9B6D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PropertyPlus.Repository</RootNamespace>
-    <AssemblyName>PropertyPlus.Repository</AssemblyName>
+    <RootNamespace>PropertyPlus.Domain</RootNamespace>
+    <AssemblyName>PropertyPlus.Domain</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,14 +39,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interface\IPortfolioRepository.cs" />
+    <Compile Include="Address.cs" />
+    <Compile Include="Interface\IMortgage.cs" />
+    <Compile Include="Interface\IAddress.cs" />
+    <Compile Include="Interface\IProperty.cs" />
+    <Compile Include="Mortgage.cs" />
+    <Compile Include="Portfolio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PropertyPlus.Domain\PropertyPlus.Domain.csproj">
-      <Project>{30123E2A-46DE-406B-86C0-372B3DFF9B6D}</Project>
-      <Name>PropertyPlus.Domain</Name>
-    </ProjectReference>
+    <Compile Include="Property.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

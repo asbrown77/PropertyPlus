@@ -1,10 +1,11 @@
 using System.Collections.Generic;
+using System.Web.Http;
 using PropertyPlus.Interface;
 using PropertyPlus.Repository.Interface;
 
 namespace PropertyPlus.Controllers.Controllers
 {
-    public class PortfolioController
+    public class PortfolioController : ApiController
     {
         private readonly IPortfolioRepository portfolioRepository;
 

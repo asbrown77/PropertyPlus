@@ -160,8 +160,12 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\PropertiesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PortfolioController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\ValuesController.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Global.asax.cs">
@@ -290,13 +294,13 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PropertyPlus.Domain\PropertyPlus.Domain.csproj">
+      <Project>{30123E2A-46DE-406B-86C0-372B3DFF9B6D}</Project>
+      <Name>PropertyPlus.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PropertyPlus.Repository\PropertyPlus.Repository.csproj">
       <Project>{93254671-DAAE-4004-BB32-46370666A452}</Project>
       <Name>PropertyPlus.Repository</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PropertyPlus\PropertyPlus.Domain.csproj">
-      <Project>{30123E2A-46DE-406B-86C0-372B3DFF9B6D}</Project>
-      <Name>PropertyPlus.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

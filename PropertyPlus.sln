@@ -1,10 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyPlus.Domain", "PropertyPlus\PropertyPlus.Domain.csproj", "{30123E2A-46DE-406B-86C0-372B3DFF9B6D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyPlus.UnitTests", "PropertyPlusTests\PropertyPlus.UnitTests.csproj", "{4EC23A11-2B80-46D0-94CC-6C2E3B429C66}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Testing", "..\Common\Testing\Common.Testing.csproj", "{313A11F6-213F-4D07-9C5E-769373FDA062}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Service", "..\Common\Common.Service\Common.Service.csproj", "{FFD2E652-CB52-41ED-A7C5-1D7A291AE34A}"
@@ -13,20 +9,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyPlus.Controllers", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyPlus.Repository", "PropertyPlus.Repository\PropertyPlus.Repository.csproj", "{93254671-DAAE-4004-BB32-46370666A452}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyPlus.Domain", "PropertyPlus.Domain\PropertyPlus.Domain.csproj", "{30123E2A-46DE-406B-86C0-372B3DFF9B6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyPlus.UnitTests", "PropertyPlus.UnitTests\PropertyPlus.UnitTests.csproj", "{4EC23A11-2B80-46D0-94CC-6C2E3B429C66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{F5166855-E229-4E03-8B42-5E93585FA188}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{DDAD1074-CE15-459D-89DC-E91F4C59C4E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PropertyPlus", "PropertyPlus", "{F3A2E019-5B5F-4038-9569-F1F12D5D9BFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{30123E2A-46DE-406B-86C0-372B3DFF9B6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{30123E2A-46DE-406B-86C0-372B3DFF9B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{30123E2A-46DE-406B-86C0-372B3DFF9B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{30123E2A-46DE-406B-86C0-372B3DFF9B6D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4EC23A11-2B80-46D0-94CC-6C2E3B429C66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4EC23A11-2B80-46D0-94CC-6C2E3B429C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4EC23A11-2B80-46D0-94CC-6C2E3B429C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4EC23A11-2B80-46D0-94CC-6C2E3B429C66}.Release|Any CPU.Build.0 = Release|Any CPU
 		{313A11F6-213F-4D07-9C5E-769373FDA062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{313A11F6-213F-4D07-9C5E-769373FDA062}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{313A11F6-213F-4D07-9C5E-769373FDA062}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,8 +41,24 @@ Global
 		{93254671-DAAE-4004-BB32-46370666A452}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93254671-DAAE-4004-BB32-46370666A452}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93254671-DAAE-4004-BB32-46370666A452}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30123E2A-46DE-406B-86C0-372B3DFF9B6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30123E2A-46DE-406B-86C0-372B3DFF9B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30123E2A-46DE-406B-86C0-372B3DFF9B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30123E2A-46DE-406B-86C0-372B3DFF9B6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EC23A11-2B80-46D0-94CC-6C2E3B429C66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EC23A11-2B80-46D0-94CC-6C2E3B429C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EC23A11-2B80-46D0-94CC-6C2E3B429C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EC23A11-2B80-46D0-94CC-6C2E3B429C66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FFD2E652-CB52-41ED-A7C5-1D7A291AE34A} = {F5166855-E229-4E03-8B42-5E93585FA188}
+		{313A11F6-213F-4D07-9C5E-769373FDA062} = {F5166855-E229-4E03-8B42-5E93585FA188}
+		{4EC23A11-2B80-46D0-94CC-6C2E3B429C66} = {DDAD1074-CE15-459D-89DC-E91F4C59C4E6}
+		{30123E2A-46DE-406B-86C0-372B3DFF9B6D} = {F3A2E019-5B5F-4038-9569-F1F12D5D9BFB}
+		{93254671-DAAE-4004-BB32-46370666A452} = {F3A2E019-5B5F-4038-9569-F1F12D5D9BFB}
+		{498D0C51-87AD-447D-95AD-163CD5329F88} = {F3A2E019-5B5F-4038-9569-F1F12D5D9BFB}
 	EndGlobalSection
 EndGlobal

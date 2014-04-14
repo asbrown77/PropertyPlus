@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{93254671-DAAE-4004-BB32-46370666A452}</ProjectGuid>
+    <ProjectGuid>{4EC23A11-2B80-46D0-94CC-6C2E3B429C66}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PropertyPlus.Repository</RootNamespace>
-    <AssemblyName>PropertyPlus.Repository</AssemblyName>
+    <RootNamespace>PropertyPlus.UnitTests</RootNamespace>
+    <AssemblyName>PropertyPlus.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,8 +30,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks">
+      <HintPath>..\packages\RhinoMocks.3.6.1\lib\net\Rhino.Mocks.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,12 +56,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interface\IPortfolioRepository.cs" />
+    <Compile Include="Domain\AddressTests.cs" />
+    <Compile Include="Controllers\PortoflioControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Domain\PortfolioTests.cs" />
+    <Compile Include="Domain\PropertyTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Testing\Common.Testing.csproj">
+      <Project>{313A11F6-213F-4D07-9C5E-769373FDA062}</Project>
+      <Name>Common.Testing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertyPlus.Controllers\PropertyPlus.Controllers.csproj">
+      <Project>{498d0c51-87ad-447d-95ad-163cd5329f88}</Project>
+      <Name>PropertyPlus.Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertyPlus.Repository\PropertyPlus.Repository.csproj">
+      <Project>{93254671-daae-4004-bb32-46370666a452}</Project>
+      <Name>PropertyPlus.Repository</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PropertyPlus.Domain\PropertyPlus.Domain.csproj">
-      <Project>{30123E2A-46DE-406B-86C0-372B3DFF9B6D}</Project>
+      <Project>{30123e2a-46de-406b-86c0-372b3dff9b6d}</Project>
       <Name>PropertyPlus.Domain</Name>
     </ProjectReference>
   </ItemGroup>
